@@ -1,0 +1,4 @@
+.ssh/
+.wget-hsts
+.viminfo
+.gitconfig
