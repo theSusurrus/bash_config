@@ -185,14 +185,12 @@ alias ll='ls -lA -hF --color=tty'                              # all but . and .
 #
 # alias cd=cd_func
 
-source ~/.git-prompt.sh
-
 function gdiff () {
 	git diff --color=always -b -w "$@" | less -R
 }
 alias diff='diff -rupPbB'
 alias ll='ls -lAhp --color=tty'
 
-export PS1="\[\e[34m\]\w\[\e[0m\] \[\e[30m\]\[\e[42m\]\$(__git_ps1 '(%s)')\n\[\e[0m\]$ "
+export PS1='\[\e[35m\]\u \[\e[32m\]\w\[\e[0m\]\[\e[31m\]$(__git_ps1)\n\[\e[0m\]> '
 
 cd C:
